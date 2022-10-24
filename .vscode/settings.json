@@ -1,0 +1,17 @@
+{
+    "python.linting.enabled": true,
+    "python.linting.pylintEnabled": true,
+    "files.exclude": {
+        "**/*.pyc": {
+            "when": "$(basename).py"
+        },
+        "**/__pycache__": true,
+    },
+    "python.linting.flake8Enabled": true,
+    "python.linting.flake8Args": [
+        "--max-line-length=150",
+    ],
+    "python.envFile": "${workspaceFolder}/.env",
+    "terminal.integrated.env.windows": {
+        "PYTHONPATH": "${workspaceFolder}/amazonscrap;${workspaceFolder}/amazonscrap/src;${workspaceFolder}/amazonscrap/src/data;${workspaceFolder}/amazonscrap/src/data/interfaces;${workspaceFolder}/amazonscrap/src/errors;${workspaceFolder}/amazonscrap/src/infra"
+    }
